@@ -48,7 +48,7 @@ app.get("/userlist",async function(req,res){
         })
     }
 })
-app.post("/userdelete/:id",async function(req,res){
+app.delete("/userdelete/:id",async function(req,res){
     try{
         let conn=await mongoclient.connect(url);
         let db=conn.db("StudentsDB");
