@@ -8,7 +8,7 @@ app.use(cors({
 const mongodb=require("mongodb")
 const mongoclient=mongodb.MongoClient;
 console.log(mongoclient);
-const url="mongodb+srv://sahaja:sahaja12@cluster0.8s2tb.mongodb.net/StudentsDB?retryWrites=true&w=majority"
+const url="mongodb+srv://sahaja:sahaja12@cluster0.8s2tb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 app.use(express.json())
 
 app.post("/usercreate",async function(req,res)
